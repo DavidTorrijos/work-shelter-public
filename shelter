@@ -1,0 +1,130 @@
+#!/bin/bash
+# work-shelter — arranque en un solo comando: ./shelter
+# Instala lo necesario la primera vez (dependencias, material CC0, compilación) y abre el juego en su ventana.
+# Lo único que se asume del sistema es Claude Code instalado y con sesión iniciada.
+# SHELTER_DESDE_APP=1 (lo usa /Applications/work-shelter-public.app): prepara y arranca el servidor, escribe la URL en
+# una línea «SHELTER_URL=…» y se queda esperando al servidor; la ventana la pone la propia app.
+set -euo pipefail
+cd "$(dirname "$0")"
+RAIZ="$(pwd)"
+NODO_VERSION="22.20.0"
+amarillo() { printf '\033[33m%s\033[0m\n' "$*"; }
+verde() { printf '\033[32m%s\033[0m\n' "$*"; }
+rojo() { printf '\033[31m%s\033[0m\n' "$*" >&2; }
+
+# Subórdenes (salir a la superficie, server/superficie.ts): ./shelter superficie [--lista] · ./shelter enganchar <id>
+# ./shelter instalar-app [--sin-dock] […]: prepara lo mismo que el arranque y crea la app de macOS, sin abrir el juego
+INSTALAR_APP=""
+case "${1:-}" in superficie|enganchar) SUBORDEN=1 ;; instalar-app) SUBORDEN=""; INSTALAR_APP=1; shift; echo "== work-shelter ==" ;; *) SUBORDEN=""; echo "== work-shelter ==" ;; esac
+
+# 1. Node 22+ (si no hay, se descarga uno portátil en .runtime/, sin permisos de administrador)
+if command -v node >/dev/null 2>&1 && [ "$(node -p 'process.versions.node.split(".")[0]')" -ge 22 ]; then
+  NODE="$(command -v node)"; NPM="$(command -v npm)"
+else
+  ARQ="$(uname -m)"; [ "$ARQ" = "x86_64" ] && ARQ="x64"
+  DIR=".runtime/node-v$NODO_VERSION-darwin-$ARQ"
+  if [ ! -x "$DIR/bin/node" ]; then
+    amarillo "No encuentro Node 22 o superior. Descargo uno portátil para work-shelter (solo esta vez)…"
+    mkdir -p .runtime
+    curl -fL --progress-bar "https://nodejs.org/dist/v$NODO_VERSION/node-v$NODO_VERSION-darwin-$ARQ.tar.gz" -o .runtime/node.tar.gz || { rojo "No he podido descargar Node. Comprueba la conexión o instala Node 22 desde https://nodejs.org"; exit 1; }
+    # suma SHA-256 oficial (https://nodejs.org/dist/v$NODO_VERSION/SHASUMS256.txt): no se ejecuta nada que no cuadre
+    case "$ARQ" in arm64) SUMA="cc04a76a09f79290194c0646f48fec40354d88969bec467789a5d55dd097f949" ;; *) SUMA="00df9c5df3e4ec6848c26b70fb47bf96492f342f4bed6b17f12d99b3a45eeecc" ;; esac
+    echo "$SUMA  .runtime/node.tar.gz" | shasum -a 256 -c - >/dev/null || { rm -f .runtime/node.tar.gz; rojo "El Node descargado no cuadra con su suma oficial: no lo uso. Instala Node 22 desde https://nodejs.org"; exit 1; }
+    tar -xzf .runtime/node.tar.gz -C .runtime && rm .runtime/node.tar.gz
+  fi
+  export PATH="$RAIZ/$DIR/bin:$PATH"; NODE="$RAIZ/$DIR/bin/node"; NPM="$RAIZ/$DIR/bin/npm"
+fi
+
+if [ -n "$SUBORDEN" ]; then
+  [ -d node_modules/tsx ] || { rojo "work-shelter aún no está instalado: ejecuta ./shelter una vez."; exit 1; }
+  exec "$NODE" --import tsx server/superficie.ts "$@"
+fi
+
+# 2. Claude Code (necesario para que los habitantes trabajen)
+if ! command -v claude >/dev/null 2>&1 && [ ! -x "$HOME/.local/bin/claude" ]; then
+  rojo "AVISO: no encuentro Claude Code (el comando 'claude')."
+  rojo "  Instálalo (https://docs.claude.com/claude-code) y entra con tu cuenta: abre una terminal, ejecuta 'claude' y luego '/login'."
+  rojo "  work-shelter se abrirá igualmente, pero los habitantes no podrán trabajar hasta entonces."
+fi
+
+# 3. Dependencias (la primera vez, o si cambia package-lock.json)
+SELLO="node_modules/.sello-shelter"
+HUELLA="$(shasum package-lock.json | cut -d' ' -f1)"
+if [ ! -f "$SELLO" ] || [ "$(cat "$SELLO")" != "$HUELLA" ]; then
+  amarillo "Instalando dependencias (la primera vez tarda un par de minutos)…"
+  "$NPM" ci --no-audit --no-fund --loglevel=error || { rojo "Falló la instalación de dependencias (npm ci)."; exit 1; }
+  echo "$HUELLA" > "$SELLO"
+fi
+
+# 3b. Binario de Electron (la ventana del juego): este paquete lo descarga aparte
+if [ ! -x node_modules/electron/dist/Electron.app/Contents/MacOS/Electron ]; then
+  amarillo "Descargando la ventana del juego (Electron, solo la primera vez)…"
+  "$NODE" node_modules/electron/install.js || amarillo "No se pudo descargar Electron: work-shelter se abrirá en el navegador."
+fi
+
+# 4. Material artístico CC0 (fijado por commit)
+if [ ! -f assets/indice.json ]; then
+  amarillo "Descargando el material artístico (CC0, unos 70 MB, solo la primera vez)…"
+  "$NODE" scripts/descargar-assets.mjs assets && "$NODE" scripts/descargar-extra.mjs assets && "$NODE" scripts/indexar-assets.mjs >/dev/null || { rojo "No se pudo descargar el material. Comprueba la conexión y vuelve a ejecutar ./shelter"; exit 1; }
+fi
+
+# 4b. Los personajes de KayKit del probador de Chapa y Pintura: si faltan (una descarga a medias), se baja lo que falte
+# aunque el resto ya estuviera
+if [ ! -f "assets/kaykit/character-animations-1.1/Mannequin Character/characters/Mannequin_Medium.glb" ]; then
+  amarillo "Descargando los personajes que faltan (CC0, unos 30 MB, solo una vez)…"
+  "$NODE" scripts/descargar-extra.mjs assets && "$NODE" scripts/indexar-assets.mjs >/dev/null || amarillo "No se pudieron bajar los personajes: se reintentará en el próximo arranque."
+fi
+
+# 5. Compilar la interfaz si no existe o su código ha cambiado desde la última compilación (por contenido, no por fechas)
+if ! "$NODE" -e "process.exit(require('./scripts/huellas.cjs').clienteAlDia() ? 0 : 1)"; then
+  amarillo "Compilando work-shelter…"
+  "$NODE" scripts/huellas.cjs compilar || { rojo "Falló la compilación de la interfaz."; exit 1; }
+fi
+
+if [ -n "$INSTALAR_APP" ]; then
+  amarillo "Creando la app…"
+  exec "$NODE" scripts/instalar-app.mjs "$@"
+fi
+
+# 6. Servidor local (solo 127.0.0.1, bajo un supervisor que lo relanza al pulsar «Reiniciar» en el juego) y ventana
+PUERTO="${SHELTER_PUERTO:-3778}"
+DATOS="${SHELTER_DATOS:-$RAIZ/.data}"
+# un servidor de antes de los últimos cambios que siga en marcha se pone al día (o se aparta) sin cerrar sus terminales
+if curl -fs "http://127.0.0.1:$PUERTO/salud" >/dev/null 2>&1; then
+  "$NODE" scripts/huellas.cjs poner-al-dia "$PUERTO" "$DATOS" >/dev/null || amarillo "No he podido poner al día el refugio que ya estaba abierto."
+fi
+if curl -fs "http://127.0.0.1:$PUERTO/salud" >/dev/null 2>&1; then
+  amarillo "Ya hay un work-shelter abierto en el puerto $PUERTO: abro otra ventana."
+  SERVIDOR_PID=""
+else
+  amarillo "Abriendo el refugio…"
+  if [ -n "${SHELTER_SIN_VENTANA:-}" ]; then "$NODE" server/supervisor.mjs &
+  else SHELTER_SALIR_SIN_CLIENTES=1 "$NODE" server/supervisor.mjs & fi
+  SERVIDOR_PID=$!
+  trap '[ -n "$SERVIDOR_PID" ] && kill -INT $SERVIDOR_PID 2>/dev/null; wait $SERVIDOR_PID 2>/dev/null' EXIT INT TERM
+  for i in $(seq 1 60); do curl -fs "http://127.0.0.1:$PUERTO/salud" >/dev/null 2>&1 && break; sleep 0.25; done
+fi
+# el secreto de este arranque (lo escribe el servidor, solo legible por ti) va en el fragmento de la URL
+for i in $(seq 1 40); do [ -s "$DATOS/token" ] && break; sleep 0.1; done
+URL="http://127.0.0.1:$PUERTO/#t=$(cat "$DATOS/token" 2>/dev/null)"
+if [ -n "${SHELTER_DESDE_APP:-}" ]; then
+  # la app lee esta línea y abre la ventana; el servidor se apaga solo cuando se cierra. Su código de salida llega a
+  # la app: 76 es «reiniciar con la app entera» (han cambiado archivos que solo se leen al abrirla)
+  echo "SHELTER_URL=$URL"
+  CODIGO=0
+  [ -n "$SERVIDOR_PID" ] && { wait $SERVIDOR_PID || CODIGO=$?; }
+  trap - EXIT INT TERM   # el servidor ya no está: que la trampa no cambie el código de salida
+  exit $CODIGO
+fi
+verde "work-shelter en marcha: http://127.0.0.1:$PUERTO  (Ctrl+C aquí lo cierra todo)"
+if [ -n "${SHELTER_SIN_VENTANA:-}" ]; then
+  # pruebas y uso sin ventana: el servidor queda en marcha hasta Ctrl+C
+  echo "Abre: $URL"
+  [ -n "$SERVIDOR_PID" ] && wait $SERVIDOR_PID
+elif [ -x node_modules/electron/dist/Electron.app/Contents/MacOS/Electron ]; then
+  SHELTER_URL="$URL" SHELTER_CDP="${SHELTER_CDP:-}" SHELTER_DEV="${SHELTER_DEV:-}" node_modules/electron/dist/Electron.app/Contents/MacOS/Electron electron/main.cjs >/dev/null 2>&1 || true
+else
+  amarillo "No encuentro Electron; abro work-shelter en el navegador."
+  open "$URL"
+  [ -n "$SERVIDOR_PID" ] && wait $SERVIDOR_PID
+fi

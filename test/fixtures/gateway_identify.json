@@ -1,0 +1,13 @@
+{
+  "_nota": "Lo que ENVÍA el adaptador (no es una respuesta). intents = GUILDS(1) | GUILD_MESSAGES(512) | MESSAGE_CONTENT(32768) = 33281.",
+  "op": 2,
+  "d": {
+    "token": "<TOKEN_DEL_BOT>",
+    "intents": 33281,
+    "properties": {
+      "os": "darwin",
+      "browser": "work-shelter",
+      "device": "work-shelter"
+    }
+  }
+}

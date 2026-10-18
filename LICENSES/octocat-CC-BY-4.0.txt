@@ -1,0 +1,23 @@
+Modelo 3D de la Octocat (assets/terceros/octocat/Octocat.glb)
+
+Este trabajo se basa en «Github_kitten»
+(https://sketchfab.com/3d-models/github-kitten-83d5a6d1a12b4427bbfd662fbc478f8d)
+de m.adityamondal2003 (Aditya, https://sketchfab.com/m.adityamondal2003),
+con licencia CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/).
+
+Licencia comprobada en la API de Sketchfab (license.slug = "by") el 2026-10-13. El archivo se tomó de la
+copia que redistribuye github.com/Ryhox/Stargazer-Islands (public/models/github_kitten.glb, commit 049ceee),
+que conserva en asset.extras el autor, la licencia y la fuente de Sketchfab.
+
+Cambios hechos para work-shelter:
+- atlas repintado en colores planos de la Octocat (negro carbón, cara color carne #f4cab1, nariz #ac5c51),
+  con los ojos en los tonos negros del original, y corregidos los triángulos de la cara y de los ojos que
+  muestreaban negro;
+- sin la malla de la cola (la que sale levantada) ni sus clips: quedan los ocho tentáculos del cuerpo;
+- acabado mate (rugosidad 0,85, sin metal);
+- normales suavizadas, mallas soldadas, simplificadas y cuantizadas (KHR_mesh_quantization);
+- el hueso de la cabeza se llama «head».
+
+La Octocat es un personaje y una marca de GitHub, Inc.; este modelo es obra de fans y no está avalado por GitHub.
+
+Texto de la licencia: https://creativecommons.org/licenses/by/4.0/legalcode

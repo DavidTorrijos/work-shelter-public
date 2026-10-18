@@ -1,0 +1,16 @@
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users/$entity",
+  "businessPhones": [
+    "+1 555 0123"
+  ],
+  "displayName": "Irene Valdés",
+  "givenName": "Irene",
+  "jobTitle": "Responsable de Plataforma",
+  "mail": "irene.valdes@taller.example",
+  "mobilePhone": null,
+  "officeLocation": "Planta 3",
+  "preferredLanguage": "es-ES",
+  "surname": "Valdés",
+  "userPrincipalName": "irene.valdes@taller.example",
+  "id": "00000000-0000-4000-8000-000000000903"
+}

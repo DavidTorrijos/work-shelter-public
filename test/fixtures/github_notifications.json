@@ -1,0 +1,28 @@
+[
+  {
+    "_nota": "Sintético, con la forma de GET /notifications de la REST API de GitHub. Repos inventados.",
+    "id": "1001", "unread": true, "reason": "review_requested", "updated_at": "2026-10-10T08:00:00Z",
+    "subject": { "title": "Carrito persistente entre sesiones", "url": "https://api.github.com/repos/refugio/tienda-web/pulls/42", "type": "PullRequest" },
+    "repository": { "full_name": "refugio/tienda-web", "html_url": "https://github.com/refugio/tienda-web" }
+  },
+  {
+    "id": "1002", "unread": true, "reason": "subscribed", "updated_at": "2026-10-10T07:00:00Z",
+    "subject": { "title": "v2.1.0", "url": "https://api.github.com/repos/refugio/guia-de-estilo/releases/123456", "type": "Release" },
+    "repository": { "full_name": "refugio/guia-de-estilo", "html_url": "https://github.com/refugio/guia-de-estilo" }
+  },
+  {
+    "id": "1003", "unread": true, "reason": "comment", "updated_at": "2026-10-10T06:00:00Z",
+    "subject": { "title": "El formulario no valida el correo", "url": "https://api.github.com/repos/refugio/landing-lanzamiento/issues/17", "type": "Issue" },
+    "repository": { "full_name": "refugio/landing-lanzamiento", "html_url": "https://github.com/refugio/landing-lanzamiento" }
+  },
+  {
+    "id": "1004", "unread": true, "reason": "ci_activity", "updated_at": "2026-10-10T05:00:00Z",
+    "subject": { "title": "render-preview workflow run failed", "url": null, "type": "CheckSuite" },
+    "repository": { "full_name": "refugio/reproductor-video", "html_url": "https://github.com/refugio/reproductor-video" }
+  },
+  {
+    "id": "1005", "unread": false, "reason": "mention", "updated_at": "2026-10-10T04:00:00Z",
+    "subject": { "title": "Leída", "url": "https://api.github.com/repos/refugio/tienda-web/issues/3", "type": "Issue" },
+    "repository": { "full_name": "refugio/tienda-web", "html_url": "https://github.com/refugio/tienda-web" }
+  }
+]

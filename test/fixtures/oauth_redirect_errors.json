@@ -1,0 +1,14 @@
+{
+  "_nota": "Parámetros de consulta que llegan al redirect http://localhost:PUERTO/ (response_mode=query). Cada clave es un caso de prueba.",
+  "usuario_cancela_o_sin_permiso_para_consentir": {
+    "error": "access_denied",
+    "error_subcode": "cancel",
+    "error_description": "AADSTS65004: User declined to consent to access the app.",
+    "state": "c2b1f0e4a9d84e7b"
+  },
+  "consentimiento_requerido_prompt_none": {
+    "error": "consent_required",
+    "error_description": "AADSTS65001: The user or administrator has not consented to use the application with ID '3e8f1a2b-7c6d-4e5f-9a0b-1c2d3e4f5a6b' named 'El Refugio'. Send an interactive authorization request for this user and resource.",
+    "state": "c2b1f0e4a9d84e7b"
+  }
+}

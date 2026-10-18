@@ -1,0 +1,30 @@
+{
+  "_nota": "Sintético, con la forma de users.messages.get?format=metadata de la Gmail API v1. Personas y dominios inventados.",
+  "mensajes": [
+    {
+      "id": "18f2a1b3c4d5e6f7", "threadId": "18f2a1b3c4d5e6f0", "labelIds": ["UNREAD", "IMPORTANT", "INBOX"],
+      "snippet": "Hola, ¿te viene bien el jueves a las 11? He reservado la sala &amp; el proyector. Si no, dime otro hueco.",
+      "internalDate": "1791622800000",
+      "payload": { "headers": [
+        { "name": "From", "value": "\"Irene Valdés\" <irene.valdes@taller.example>" },
+        { "name": "Subject", "value": "Reunión del jueves" },
+        { "name": "Date", "value": "Sat, 10 Oct 2026 10:20:00 +0200" }
+      ] }
+    },
+    {
+      "id": "18f2a1b3c4d5e6f8", "threadId": "18f2a1b3c4d5e6f8", "labelIds": ["UNREAD", "CATEGORY_PROMOTIONS", "INBOX"],
+      "snippet": "Solo esta semana: 20 % en todas las linternas de dinamo.",
+      "internalDate": "1791619200000",
+      "payload": { "headers": [
+        { "name": "From", "value": "ofertas@tienda.example" },
+        { "name": "Subject", "value": "Ofertas de la semana" }
+      ] }
+    },
+    {
+      "id": "18f2a1b3c4d5e6f9", "threadId": "18f2a1b3c4d5e6f9", "labelIds": ["INBOX", "IMPORTANT"],
+      "snippet": "Ya leído: no debe salir.",
+      "internalDate": "1791615600000",
+      "payload": { "headers": [{ "name": "From", "value": "Tomás Ibarra <tomas.ibarra@taller.example>" }, { "name": "Subject", "value": "Leído" }] }
+    }
+  ]
+}

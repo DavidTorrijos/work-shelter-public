@@ -1,0 +1,8 @@
+{
+  "user_code": "FQK5HW3UF",
+  "device_code": "DAQABIQEAAADW6jl31mB3T7ugrWTT8pFeFAKE-DEVICE-CODE",
+  "verification_uri": "https://microsoft.com/devicelogin",
+  "expires_in": 900,
+  "interval": 5,
+  "message": "Para iniciar sesión, use un explorador web para abrir la página https://microsoft.com/devicelogin y escriba el código FQK5HW3UF para autenticarse."
+}

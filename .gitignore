@@ -1,0 +1,26 @@
+# Dependencias y compilados
+node_modules/
+dist/
+*.tsbuildinfo
+
+# Assets descargados (CC0, se bajan con el arranque); los de terceros que no se pueden bajar de un commit fijo van en el repo
+/assets/*
+!/assets/terceros/
+
+# Estado local del refugio y datos de usuario
+/.data/
+.env
+.env.*
+*.pem
+*.key
+secrets*
+
+# Capturas temporales de QA
+/_capturas/
+/capturas/tmp/
+
+# Sistema
+.DS_Store
+
+# Node portátil que descarga ./shelter si no hay uno
+/.runtime/

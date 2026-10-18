@@ -1,0 +1,209 @@
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('00000000-0000-4000-8000-000000000903')/calendarView(subject,bodyPreview,start,end,isAllDay,isCancelled,isOrganizer,isOnlineMeeting,onlineMeetingProvider,onlineMeeting,onlineMeetingUrl,location,locations,organizer,responseStatus,showAs,type,seriesMasterId,importance,sensitivity,webLink)",
+  "value": [
+    {
+      "@odata.etag": "W/\"IiIsqMbYjsT5e/T7KzowPTAAAPLv0w==\"",
+      "id": "AAMkAGI2TG93AAA001BGAAAAAAAiQ8W967B7TKBjgx9rVEURBwAiIsqMbYjsT5e-T7KzowPTAAAAAAENAAA=",
+      "subject": "Reunión diaria de Plataforma",
+      "bodyPreview": "Reunión de Microsoft Teams. Unirse: haga clic aquí para unirse a la reunión.",
+      "importance": "normal",
+      "sensitivity": "normal",
+      "isAllDay": false,
+      "isCancelled": false,
+      "isOrganizer": false,
+      "isOnlineMeeting": true,
+      "onlineMeetingProvider": "teamsForBusiness",
+      "onlineMeeting": {
+        "joinUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_NjJhYzQ5ZGQtOGM0Mi00ZjE3LWFkMzMtZDE2MjU3YmE4ZjYx%40thread.v2/0?context=%7b%22Tid%22%3a%226f1c2a3b-4d5e-4f60-8a7b-9c0d1e2f3a4b%22%2c%22Oid%22%3a%2200000000-0000-4000-8000-000000000903%22%7d",
+        "conferenceId": "512 384 907#",
+        "tollNumber": "+1 555 0100"
+      },
+      "onlineMeetingUrl": null,
+      "showAs": "busy",
+      "type": "occurrence",
+      "seriesMasterId": "AAMkAGI2TG93AAA100BGAAAAAAAiQ8W967B7TKBjgx9rVEURBwAiIsqMbYjsT5e-T7KzowPTAAAAAAENAAA=",
+      "start": {
+        "dateTime": "2026-10-13T09:30:00.0000000",
+        "timeZone": "Europe/Paris"
+      },
+      "end": {
+        "dateTime": "2026-10-13T09:45:00.0000000",
+        "timeZone": "Europe/Paris"
+      },
+      "location": {
+        "displayName": "Reunión de Microsoft Teams",
+        "locationType": "default",
+        "uniqueId": "Reunión de Microsoft Teams",
+        "uniqueIdType": "private"
+      },
+      "locations": [
+        {
+          "displayName": "Reunión de Microsoft Teams",
+          "locationType": "default",
+          "uniqueId": "Reunión de Microsoft Teams",
+          "uniqueIdType": "private"
+        }
+      ],
+      "organizer": {
+        "emailAddress": {
+          "name": "Tomás Ibarra",
+          "address": "tomas.ibarra@taller.example"
+        }
+      },
+      "responseStatus": {
+        "response": "accepted",
+        "time": "2026-09-01T08:12:44.0000000Z"
+      },
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAMkAGI2TG93AAA001BGAAAAAAAiQ8W967B7TKBjgx9rVEURBwAiIsqMbYjsT5e-T7KzowPTAAAAAAENAAA%3D&exvsurl=1&path=/calendar/item"
+    },
+    {
+      "@odata.etag": "W/\"IiIsqMbYjsT5e/T7KzowPTAAAPLv1A==\"",
+      "id": "AAMkAGI2TG93AAA002BGAAAAAAAiQ8W967B7TKBjgx9rVEURBwAiIsqMbYjsT5e-T7KzowPTAAAAAAENAAA=",
+      "subject": "Festivo",
+      "bodyPreview": "",
+      "importance": "normal",
+      "sensitivity": "normal",
+      "isAllDay": true,
+      "isCancelled": false,
+      "isOrganizer": true,
+      "isOnlineMeeting": false,
+      "onlineMeetingProvider": "unknown",
+      "onlineMeeting": null,
+      "onlineMeetingUrl": null,
+      "showAs": "oof",
+      "type": "singleInstance",
+      "seriesMasterId": null,
+      "start": {
+        "dateTime": "2026-10-12T00:00:00.0000000",
+        "timeZone": "Europe/Paris"
+      },
+      "end": {
+        "dateTime": "2026-10-13T00:00:00.0000000",
+        "timeZone": "Europe/Paris"
+      },
+      "location": {
+        "displayName": "",
+        "locationType": "default",
+        "uniqueIdType": "unknown",
+        "address": {},
+        "coordinates": {}
+      },
+      "locations": [],
+      "organizer": {
+        "emailAddress": {
+          "name": "Irene Valdés",
+          "address": "irene.valdes@taller.example"
+        }
+      },
+      "responseStatus": {
+        "response": "organizer",
+        "time": "0001-01-01T00:00:00Z"
+      },
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAMkAGI2TG93AAA002BGAAAAAAAiQ8W967B7TKBjgx9rVEURBwAiIsqMbYjsT5e-T7KzowPTAAAAAAENAAA%3D&exvsurl=1&path=/calendar/item"
+    },
+    {
+      "@odata.etag": "W/\"IiIsqMbYjsT5e/T7KzowPTAAAPLv1Q==\"",
+      "id": "AAMkAGI2TG93AAA003BGAAAAAAAiQ8W967B7TKBjgx9rVEURBwAiIsqMbYjsT5e-T7KzowPTAAAAAAENAAA=",
+      "subject": "Revisión de arquitectura: cola de notificaciones",
+      "bodyPreview": "Repasamos la propuesta de migración a SQS y el plan de rollback. Traed dudas.",
+      "importance": "high",
+      "sensitivity": "normal",
+      "isAllDay": false,
+      "isCancelled": false,
+      "isOrganizer": true,
+      "isOnlineMeeting": false,
+      "onlineMeetingProvider": "unknown",
+      "onlineMeeting": null,
+      "onlineMeetingUrl": null,
+      "showAs": "busy",
+      "type": "singleInstance",
+      "seriesMasterId": null,
+      "start": {
+        "dateTime": "2026-10-14T16:00:00.0000000",
+        "timeZone": "Europe/Paris"
+      },
+      "end": {
+        "dateTime": "2026-10-14T17:00:00.0000000",
+        "timeZone": "Europe/Paris"
+      },
+      "location": {
+        "displayName": "Sala Faro (Planta 3)",
+        "locationType": "conferenceRoom",
+        "uniqueId": "Sala Faro (Planta 3)",
+        "uniqueIdType": "private"
+      },
+      "locations": [
+        {
+          "displayName": "Sala Faro (Planta 3)",
+          "locationType": "conferenceRoom",
+          "uniqueId": "Sala Faro (Planta 3)",
+          "uniqueIdType": "private"
+        }
+      ],
+      "organizer": {
+        "emailAddress": {
+          "name": "Irene Valdés",
+          "address": "irene.valdes@taller.example"
+        }
+      },
+      "responseStatus": {
+        "response": "organizer",
+        "time": "0001-01-01T00:00:00Z"
+      },
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAMkAGI2TG93AAA003BGAAAAAAAiQ8W967B7TKBjgx9rVEURBwAiIsqMbYjsT5e-T7KzowPTAAAAAAENAAA%3D&exvsurl=1&path=/calendar/item"
+    },
+    {
+      "@odata.etag": "W/\"IiIsqMbYjsT5e/T7KzowPTAAAPLv1g==\"",
+      "id": "AAMkAGI2TG93AAA004BGAAAAAAAiQ8W967B7TKBjgx9rVEURBwAiIsqMbYjsT5e-T7KzowPTAAAAAAENAAA=",
+      "subject": "Cancelado: Formación de seguridad",
+      "bodyPreview": "La sesión se reprograma para noviembre.",
+      "importance": "normal",
+      "sensitivity": "normal",
+      "isAllDay": false,
+      "isCancelled": true,
+      "isOrganizer": false,
+      "isOnlineMeeting": true,
+      "onlineMeetingProvider": "teamsForBusiness",
+      "onlineMeeting": {
+        "joinUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_OTk4ZmExZGQtOGM0Mi00ZjE3LWFkMzMtZDE2MjU3YmE4ZjYx%40thread.v2/0?context=%7b%22Tid%22%3a%226f1c2a3b-4d5e-4f60-8a7b-9c0d1e2f3a4b%22%2c%22Oid%22%3a%2200000000-0000-4000-8000-000000000903%22%7d"
+      },
+      "onlineMeetingUrl": null,
+      "showAs": "free",
+      "type": "singleInstance",
+      "seriesMasterId": null,
+      "start": {
+        "dateTime": "2026-10-15T11:00:00.0000000",
+        "timeZone": "Europe/Paris"
+      },
+      "end": {
+        "dateTime": "2026-10-15T12:30:00.0000000",
+        "timeZone": "Europe/Paris"
+      },
+      "location": {
+        "displayName": "Reunión de Microsoft Teams",
+        "locationType": "default",
+        "uniqueId": "Reunión de Microsoft Teams",
+        "uniqueIdType": "private"
+      },
+      "locations": [
+        {
+          "displayName": "Reunión de Microsoft Teams",
+          "locationType": "default",
+          "uniqueId": "Reunión de Microsoft Teams",
+          "uniqueIdType": "private"
+        }
+      ],
+      "organizer": {
+        "emailAddress": {
+          "name": "Seguridad TI",
+          "address": "seguridad@taller.example"
+        }
+      },
+      "responseStatus": {
+        "response": "tentativelyAccepted",
+        "time": "2026-10-02T10:05:31.0000000Z"
+      },
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAMkAGI2TG93AAA004BGAAAAAAAiQ8W967B7TKBjgx9rVEURBwAiIsqMbYjsT5e-T7KzowPTAAAAAAENAAA%3D&exvsurl=1&path=/calendar/item"
+    }
+  ]
+}

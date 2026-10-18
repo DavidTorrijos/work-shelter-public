@@ -1,0 +1,176 @@
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('00000000-0000-4000-8000-000000000903')/mailFolders('inbox')/messages(id,receivedDateTime,subject,bodyPreview,importance,isRead,webLink,from,sender,toRecipients,ccRecipients,flag,inferenceClassification,conversationId,hasAttachments)",
+  "value": [
+    {
+      "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAwR4H1\"",
+      "id": "AAMkAGI2THVSAAA001AAAAAAEMAAAiIsqMbYjsT5e-T7KzowPTAAAAAAFNAAA=",
+      "receivedDateTime": "2026-10-10T08:52:17Z",
+      "hasAttachments": false,
+      "subject": "URGENTE: caída del entorno de staging",
+      "bodyPreview": "Hola Irene, staging no responde desde las 10:40. ¿Puedes revisar el balanceador antes de la demo de las 12? Te dejo el enlace al panel de alertas.",
+      "importance": "high",
+      "conversationId": "AAQkAGI2THVSAAAQAA001Fr0Mz8xR0aBcD9eFgH1I=",
+      "isRead": false,
+      "webLink": "https://outlook.office365.com/owa/?ItemID=AAMkAGI2THVSAAA001AAAAAAEMAAAiIsqMbYjsT5e-T7KzowPTAAAAAAFNAAA%3D&exvsurl=1&viewmodel=ReadMessageItem",
+      "inferenceClassification": "focused",
+      "sender": {
+        "emailAddress": {
+          "name": "Bruno Esteve",
+          "address": "bruno.esteve@taller.example"
+        }
+      },
+      "from": {
+        "emailAddress": {
+          "name": "Bruno Esteve",
+          "address": "bruno.esteve@taller.example"
+        }
+      },
+      "toRecipients": [
+        {
+          "emailAddress": {
+            "name": "Irene Valdés",
+            "address": "irene.valdes@taller.example"
+          }
+        }
+      ],
+      "ccRecipients": [],
+      "flag": {
+        "flagStatus": "notFlagged"
+      }
+    },
+    {
+      "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAwR4H2\"",
+      "id": "AAMkAGI2THVSAAA002AAAAAAEMAAAiIsqMbYjsT5e-T7KzowPTAAAAAAFNAAA=",
+      "receivedDateTime": "2026-10-10T07:31:05Z",
+      "hasAttachments": true,
+      "subject": "Revisión del presupuesto Q4",
+      "bodyPreview": "Adjunto la versión 3 del presupuesto. Necesito tu visto bueno antes del lunes; he marcado en amarillo las partidas de infraestructura.",
+      "importance": "normal",
+      "conversationId": "AAQkAGI2THVSAAAQAA002Fr0Mz8xR0aBcD9eFgH1I=",
+      "isRead": false,
+      "webLink": "https://outlook.office365.com/owa/?ItemID=AAMkAGI2THVSAAA002AAAAAAEMAAAiIsqMbYjsT5e-T7KzowPTAAAAAAFNAAA%3D&exvsurl=1&viewmodel=ReadMessageItem",
+      "inferenceClassification": "focused",
+      "sender": {
+        "emailAddress": {
+          "name": "Nerea Calvo",
+          "address": "nerea.calvo@taller.example"
+        }
+      },
+      "from": {
+        "emailAddress": {
+          "name": "Nerea Calvo",
+          "address": "nerea.calvo@taller.example"
+        }
+      },
+      "toRecipients": [
+        {
+          "emailAddress": {
+            "name": "Irene Valdés",
+            "address": "irene.valdes@taller.example"
+          }
+        }
+      ],
+      "ccRecipients": [
+        {
+          "emailAddress": {
+            "name": "Dirección Financiera",
+            "address": "finanzas@taller.example"
+          }
+        }
+      ],
+      "flag": {
+        "flagStatus": "flagged",
+        "startDateTime": {
+          "dateTime": "2026-10-10T00:00:00.0000000",
+          "timeZone": "UTC"
+        },
+        "dueDateTime": {
+          "dateTime": "2026-10-12T00:00:00.0000000",
+          "timeZone": "UTC"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAwR4H3\"",
+      "id": "AAMkAGI2THVSAAA003AAAAAAEMAAAiIsqMbYjsT5e-T7KzowPTAAAAAAFNAAA=",
+      "receivedDateTime": "2026-10-09T16:04:48Z",
+      "hasAttachments": false,
+      "subject": "RE: Retro del sprint 34",
+      "bodyPreview": "Gracias a todos. @Irene Valdés, ¿puedes preparar el resumen de incidencias para la próxima retro? Lo vemos el jueves.",
+      "importance": "normal",
+      "conversationId": "AAQkAGI2THVSAAAQAA003Fr0Mz8xR0aBcD9eFgH1I=",
+      "isRead": false,
+      "webLink": "https://outlook.office365.com/owa/?ItemID=AAMkAGI2THVSAAA003AAAAAAEMAAAiIsqMbYjsT5e-T7KzowPTAAAAAAFNAAA%3D&exvsurl=1&viewmodel=ReadMessageItem",
+      "inferenceClassification": "focused",
+      "sender": {
+        "emailAddress": {
+          "name": "Tomás Ibarra",
+          "address": "tomas.ibarra@taller.example"
+        }
+      },
+      "from": {
+        "emailAddress": {
+          "name": "Tomás Ibarra",
+          "address": "tomas.ibarra@taller.example"
+        }
+      },
+      "toRecipients": [
+        {
+          "emailAddress": {
+            "name": "Equipo Plataforma",
+            "address": "plataforma@taller.example"
+          }
+        }
+      ],
+      "ccRecipients": [
+        {
+          "emailAddress": {
+            "name": "Irene Valdés",
+            "address": "irene.valdes@taller.example"
+          }
+        }
+      ],
+      "flag": {
+        "flagStatus": "notFlagged"
+      }
+    },
+    {
+      "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAwR4H4\"",
+      "id": "AAMkAGI2THVSAAA004AAAAAAEMAAAiIsqMbYjsT5e-T7KzowPTAAAAAAFNAAA=",
+      "receivedDateTime": "2026-10-09T09:15:00Z",
+      "hasAttachments": false,
+      "subject": "Boletín semanal de seguridad",
+      "bodyPreview": "Esta semana: actualización obligatoria de navegadores, nuevo procedimiento de acceso por VPN y recordatorio del curso de phishing.",
+      "importance": "low",
+      "conversationId": "AAQkAGI2THVSAAAQAA004Fr0Mz8xR0aBcD9eFgH1I=",
+      "isRead": false,
+      "webLink": "https://outlook.office365.com/owa/?ItemID=AAMkAGI2THVSAAA004AAAAAAEMAAAiIsqMbYjsT5e-T7KzowPTAAAAAAFNAAA%3D&exvsurl=1&viewmodel=ReadMessageItem",
+      "inferenceClassification": "other",
+      "sender": {
+        "emailAddress": {
+          "name": "Seguridad TI",
+          "address": "seguridad@taller.example"
+        }
+      },
+      "from": {
+        "emailAddress": {
+          "name": "Seguridad TI",
+          "address": "seguridad@taller.example"
+        }
+      },
+      "toRecipients": [
+        {
+          "emailAddress": {
+            "name": "Toda la empresa",
+            "address": "todos@taller.example"
+          }
+        }
+      ],
+      "ccRecipients": [],
+      "flag": {
+        "flagStatus": "notFlagged"
+      }
+    }
+  ],
+  "@odata.nextLink": "https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messages?%24filter=receivedDateTime+ge+2026-10-03T00%3a00%3a00Z+and+isRead+eq+false&%24orderby=receivedDateTime+desc&%24top=4&%24select=id%2creceivedDateTime%2csubject%2cbodyPreview%2cimportance%2cisRead%2cwebLink%2cfrom%2csender%2ctoRecipients%2cccRecipients%2cflag%2cinferenceClassification%2cconversationId%2chasAttachments&%24skip=4"
+}

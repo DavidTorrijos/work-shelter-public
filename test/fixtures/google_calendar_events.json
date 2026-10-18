@@ -1,0 +1,32 @@
+{
+  "_nota": "Sintético, con la forma de calendars/primary/events?singleEvents=true de Google Calendar API v3.",
+  "kind": "calendar#events",
+  "timeZone": "Europe/Paris",
+  "items": [
+    {
+      "id": "evt001", "status": "confirmed", "htmlLink": "https://www.google.com/calendar/event?eid=ZXZ0MDAx",
+      "summary": "Revisión del sprint", "location": "Sala Faro (Planta 3)",
+      "start": { "dateTime": "2026-10-13T09:30:00+02:00", "timeZone": "Europe/Paris" }, "end": { "dateTime": "2026-10-13T10:00:00+02:00" },
+      "hangoutLink": "https://meet.google.com/abc-defg-hij",
+      "organizer": { "email": "irene.valdes@taller.example", "displayName": "Irene Valdés" }
+    },
+    {
+      "id": "evt002", "status": "confirmed", "htmlLink": "https://www.google.com/calendar/event?eid=ZXZ0MDAy",
+      "summary": "Festivo", "start": { "date": "2026-10-12" }, "end": { "date": "2026-10-13" },
+      "organizer": { "email": "irene.valdes@taller.example" }
+    },
+    {
+      "id": "evt003", "status": "cancelled", "summary": "Cancelada",
+      "start": { "dateTime": "2026-10-14T12:00:00+02:00" }, "end": { "dateTime": "2026-10-14T13:00:00+02:00" }
+    },
+    {
+      "id": "evt004", "status": "confirmed", "summary": "La rechacé",
+      "start": { "dateTime": "2026-10-15T12:00:00+02:00" }, "end": { "dateTime": "2026-10-15T13:00:00+02:00" },
+      "attendees": [{ "email": "yo@taller.example", "self": true, "responseStatus": "declined" }]
+    },
+    {
+      "id": "evt005", "status": "confirmed", "summary": "Llamada con soporte", "description": "Enlace: https://example.zoom.us/j/123456789",
+      "start": { "dateTime": "2026-10-16T16:00:00+02:00" }, "end": { "dateTime": "2026-10-16T16:30:00+02:00" }
+    }
+  ]
+}

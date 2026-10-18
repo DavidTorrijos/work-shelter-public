@@ -1,0 +1,12 @@
+{
+  "error": "invalid_grant",
+  "error_description": "AADSTS65001: The user or administrator has not consented to use the application with ID '3e8f1a2b-7c6d-4e5f-9a0b-1c2d3e4f5a6b' named 'El Refugio'. Send an interactive authorization request for this user and resource. Trace ID: 0000aaaa-11bb-cccc-dd22-eeeeee333333 Correlation ID: aaaa0000-bb11-2222-33cc-444444dddddd Timestamp: 2026-10-10 09:14:31Z",
+  "error_codes": [
+    65001
+  ],
+  "timestamp": "2026-10-10 09:14:31Z",
+  "trace_id": "0000aaaa-11bb-cccc-dd22-eeeeee333333",
+  "correlation_id": "aaaa0000-bb11-2222-33cc-444444dddddd",
+  "suberror": "consent_required",
+  "error_uri": "https://login.microsoftonline.com/error?code=65001"
+}

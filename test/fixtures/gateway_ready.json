@@ -1,0 +1,32 @@
+{
+  "op": 0,
+  "s": 1,
+  "t": "READY",
+  "d": {
+    "v": 10,
+    "user": {
+      "id": "1558182258278531074",
+      "username": "El Refugio",
+      "discriminator": "4821",
+      "global_name": null,
+      "avatar": null,
+      "bot": true,
+      "verified": true,
+      "mfa_enabled": false,
+      "flags": 0,
+      "email": null
+    },
+    "guilds": [
+      {
+        "id": "1186246479052931073",
+        "unavailable": true
+      }
+    ],
+    "session_id": "9f0e8d7c6b5a4f3e2d1c0b9a8f7e6d5c",
+    "resume_gateway_url": "wss://gateway-us-east1-c.discord.gg",
+    "application": {
+      "id": "1558182258278531074",
+      "flags": 524288
+    }
+  }
+}

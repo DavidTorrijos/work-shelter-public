@@ -1,0 +1,112 @@
+{
+  "op": 0,
+  "s": 57,
+  "t": "MESSAGE_CREATE",
+  "d": {
+    "id": "1558402630827507732",
+    "channel_id": "1193826425241731084",
+    "guild_id": "1186246479052931073",
+    "author": {
+      "id": "536832324403331077",
+      "username": "nerea.c",
+      "avatar": null,
+      "discriminator": "0",
+      "public_flags": 0,
+      "flags": 0,
+      "global_name": "Nerea Calvo",
+      "banner": null,
+      "accent_color": null,
+      "avatar_decoration_data": null
+    },
+    "member": {
+      "roles": [],
+      "nick": null,
+      "avatar": null,
+      "banner": null,
+      "premium_since": null,
+      "joined_at": "2024-01-08T08:30:00.000000+00:00",
+      "pending": false,
+      "flags": 0,
+      "deaf": false,
+      "mute": false,
+      "communication_disabled_until": null
+    },
+    "content": "Yo me encargo después de comer 👍",
+    "timestamp": "2026-10-10T08:55:40.910000+00:00",
+    "edited_timestamp": null,
+    "tts": false,
+    "mention_everyone": false,
+    "mentions": [
+      {
+        "id": "286829995622531075",
+        "username": "irene.valdes",
+        "avatar": "a1b2c3d4e5f60718293a4b5c6d7e8f90",
+        "discriminator": "0",
+        "public_flags": 0,
+        "flags": 0,
+        "global_name": "Irene Valdés",
+        "banner": null,
+        "accent_color": null,
+        "avatar_decoration_data": null,
+        "member": {
+          "roles": [
+            "1186247737344131078",
+            "1186247485685891079"
+          ],
+          "nick": null,
+          "avatar": null,
+          "banner": null,
+          "premium_since": null,
+          "joined_at": "2023-12-18T10:00:41.102000+00:00",
+          "pending": false,
+          "flags": 0,
+          "deaf": false,
+          "mute": false,
+          "communication_disabled_until": null
+        }
+      }
+    ],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "components": [],
+    "pinned": false,
+    "type": 19,
+    "flags": 0,
+    "message_reference": {
+      "type": 0,
+      "message_id": "1558393655394435091",
+      "channel_id": "1193826425241731084",
+      "guild_id": "1186246479052931073"
+    },
+    "referenced_message": {
+      "id": "1558393655394435091",
+      "channel_id": "1193826425241731084",
+      "author": {
+        "id": "286829995622531075",
+        "username": "irene.valdes",
+        "avatar": "a1b2c3d4e5f60718293a4b5c6d7e8f90",
+        "discriminator": "0",
+        "public_flags": 0,
+        "flags": 0,
+        "global_name": "Irene Valdés",
+        "banner": null,
+        "accent_color": null,
+        "avatar_decoration_data": null
+      },
+      "content": "He subido la rama de la migración de la cola. ¿Alguien la revisa hoy?",
+      "timestamp": "2026-10-10T08:20:01.000000+00:00",
+      "edited_timestamp": null,
+      "tts": false,
+      "mention_everyone": false,
+      "mentions": [],
+      "mention_roles": [],
+      "attachments": [],
+      "embeds": [],
+      "components": [],
+      "pinned": false,
+      "type": 0,
+      "flags": 0
+    }
+  }
+}

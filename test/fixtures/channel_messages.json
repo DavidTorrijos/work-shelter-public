@@ -1,0 +1,115 @@
+[
+  {
+    "type": 0,
+    "content": "<@286829995622531075> <@&1186247737344131078> staging vuelve a dar 502 tras el despliegue de las 10:30. ¿Lo miramos antes de la demo?",
+    "mentions": [
+      {
+        "id": "286829995622531075",
+        "username": "irene.valdes",
+        "avatar": "a1b2c3d4e5f60718293a4b5c6d7e8f90",
+        "discriminator": "0",
+        "public_flags": 0,
+        "flags": 0,
+        "global_name": "Irene Valdés",
+        "banner": null,
+        "accent_color": null,
+        "avatar_decoration_data": null
+      }
+    ],
+    "mention_roles": [
+      "1186247737344131078"
+    ],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-10-10T08:47:12.345000+00:00",
+    "edited_timestamp": null,
+    "flags": 0,
+    "components": [],
+    "id": "1558400497751293969",
+    "channel_id": "1206510000537731085",
+    "author": {
+      "id": "455657442508931076",
+      "username": "brunoesteve",
+      "avatar": "0f1e2d3c4b5a69788796a5b4c3d2e1f0",
+      "discriminator": "0",
+      "public_flags": 0,
+      "flags": 0,
+      "global_name": "Bruno Esteve",
+      "banner": null,
+      "accent_color": null,
+      "avatar_decoration_data": null
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false
+  },
+  {
+    "type": 0,
+    "content": "Captura del error en el balanceador:",
+    "mentions": [],
+    "mention_roles": [],
+    "attachments": [
+      {
+        "id": "1558398692334108699",
+        "filename": "error-502.png",
+        "size": 184213,
+        "url": "https://cdn.discordapp.com/attachments/1206510000537731085/1558398692543823900/error-502.png?ex=6707c1a2&is=67067022&hm=FAKE",
+        "proxy_url": "https://media.discordapp.net/attachments/1206510000537731085/0/error-502.png",
+        "width": 1280,
+        "height": 720,
+        "content_type": "image/png"
+      }
+    ],
+    "embeds": [],
+    "timestamp": "2026-10-10T08:40:02.000000+00:00",
+    "edited_timestamp": null,
+    "flags": 0,
+    "components": [],
+    "id": "1558398692753539097",
+    "channel_id": "1206510000537731085",
+    "author": {
+      "id": "536832324403331077",
+      "username": "nerea.c",
+      "avatar": null,
+      "discriminator": "0",
+      "public_flags": 0,
+      "flags": 0,
+      "global_name": "Nerea Calvo",
+      "banner": null,
+      "accent_color": null,
+      "avatar_decoration_data": null
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false
+  },
+  {
+    "type": 0,
+    "content": "@everyone despliegue 2026.10.10-1 en curso, no hagáis merge a main durante 20 minutos.",
+    "mentions": [],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-10-10T08:31:15.000000+00:00",
+    "edited_timestamp": null,
+    "flags": 0,
+    "components": [],
+    "id": "1558396482355331098",
+    "channel_id": "1206510000537731085",
+    "author": {
+      "id": "455657442508931076",
+      "username": "brunoesteve",
+      "avatar": "0f1e2d3c4b5a69788796a5b4c3d2e1f0",
+      "discriminator": "0",
+      "public_flags": 0,
+      "flags": 0,
+      "global_name": "Bruno Esteve",
+      "banner": null,
+      "accent_color": null,
+      "avatar_decoration_data": null
+    },
+    "pinned": false,
+    "mention_everyone": true,
+    "tts": false
+  }
+]

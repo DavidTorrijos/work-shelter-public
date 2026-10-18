@@ -1,0 +1,47 @@
+{
+  "_nota": "Cuerpos de error de Microsoft Graph (formato {error:{code,message,innerError}}). La clave indica el estado HTTP.",
+  "401_token_caducado": {
+    "error": {
+      "code": "InvalidAuthenticationToken",
+      "message": "Lifetime validation failed, the token is expired.",
+      "innerError": {
+        "date": "2026-10-10T09:20:11",
+        "request-id": "5d1e7c3a-0b9f-4a61-8e2d-3c4b5a697d80",
+        "client-request-id": "5d1e7c3a-0b9f-4a61-8e2d-3c4b5a697d80"
+      }
+    }
+  },
+  "400_filtro_ineficiente": {
+    "error": {
+      "code": "InefficientFilter",
+      "message": "The restriction or sort order is too complex for this operation.",
+      "innerError": {
+        "date": "2026-10-10T09:21:40",
+        "request-id": "9a2b3c4d-5e6f-4a7b-8c9d-0e1f2a3b4c5d",
+        "client-request-id": "9a2b3c4d-5e6f-4a7b-8c9d-0e1f2a3b4c5d"
+      }
+    }
+  },
+  "403_sin_permiso": {
+    "error": {
+      "code": "ErrorAccessDenied",
+      "message": "Access is denied. Check credentials and try again.",
+      "innerError": {
+        "date": "2026-10-10T09:22:02",
+        "request-id": "1f2e3d4c-5b6a-4978-8a9b-0c1d2e3f4a5b",
+        "client-request-id": "1f2e3d4c-5b6a-4978-8a9b-0c1d2e3f4a5b"
+      }
+    }
+  },
+  "429_limitado": {
+    "error": {
+      "code": "ApplicationThrottled",
+      "message": "Application is over its MailboxConcurrency limit.",
+      "innerError": {
+        "date": "2026-10-10T09:23:15",
+        "request-id": "7e6d5c4b-3a29-4180-9f8e-7d6c5b4a3928",
+        "client-request-id": "7e6d5c4b-3a29-4180-9f8e-7d6c5b4a3928"
+      }
+    }
+  }
+}

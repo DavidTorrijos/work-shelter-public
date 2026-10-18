@@ -1,0 +1,38 @@
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(message)",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.message",
+      "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAwR4H5\"",
+      "id": "AAMkAGI2THVSAAA005AAAAAAEMAAAiIsqMbYjsT5e-T7KzowPTAAAAAAFNAAA=",
+      "receivedDateTime": "2026-10-10T09:30:12Z",
+      "subject": "Acta de la reunión con el proveedor de CDN",
+      "bodyPreview": "Resumen: renovamos contrato a 12 meses, SLA del 99,95 % y migración prevista para noviembre.",
+      "importance": "normal",
+      "isRead": false,
+      "webLink": "https://outlook.office365.com/owa/?ItemID=AAMkAGI2THVSAAA005AAAAAAEMAAAiIsqMbYjsT5e-T7KzowPTAAAAAAFNAAA%3D&exvsurl=1&viewmodel=ReadMessageItem",
+      "from": {
+        "emailAddress": {
+          "name": "Olga Prieto",
+          "address": "olga.prieto@taller.example"
+        }
+      },
+      "flag": {
+        "flagStatus": "notFlagged"
+      }
+    },
+    {
+      "@odata.type": "#microsoft.graph.message",
+      "id": "AAMkAGI2THVSAAA004AAAAAAEMAAAiIsqMbYjsT5e-T7KzowPTAAAAAAFNAAA=",
+      "isRead": true
+    },
+    {
+      "@odata.type": "#microsoft.graph.message",
+      "id": "AAMkAGI2THVSAAA001AAAAAAEMAAAiIsqMbYjsT5e-T7KzowPTAAAAAAFNAAA=",
+      "@removed": {
+        "reason": "deleted"
+      }
+    }
+  ],
+  "@odata.deltaLink": "https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messages/delta?$deltatoken=LztZwWjo5IivWBhyxw5rACKxf7mPm0oW6JZZ7fvKxYPS_67JnEYmfQQMPccy6FRun0DWJF5775dvuXxlZnMYhBubC1v4SBVT9ZjO8f7acZI.uCdGKSBS4YxPEbn_Q5zxLSq91WhpGeT9mKbPq2aR6O8"
+}

@@ -1,0 +1,153 @@
+[
+  {
+    "id": "1186246730711171080",
+    "type": 4,
+    "guild_id": "1186246479052931073",
+    "position": 0,
+    "flags": 0,
+    "parent_id": null,
+    "name": "Texto",
+    "permission_overwrites": []
+  },
+  {
+    "id": "1186246982369411082",
+    "type": 0,
+    "guild_id": "1186246479052931073",
+    "position": 0,
+    "flags": 0,
+    "parent_id": "1186246730711171080",
+    "name": "general",
+    "topic": "Charla general del equipo",
+    "nsfw": false,
+    "rate_limit_per_user": 0,
+    "last_message_id": "1558388114718851093",
+    "permission_overwrites": []
+  },
+  {
+    "id": "1186247024312451083",
+    "type": 5,
+    "guild_id": "1186246479052931073",
+    "position": 1,
+    "flags": 0,
+    "parent_id": "1186246730711171080",
+    "name": "anuncios",
+    "topic": "Solo dirección publica aquí",
+    "nsfw": false,
+    "rate_limit_per_user": 0,
+    "last_message_id": "1557769538764931094",
+    "permission_overwrites": [
+      {
+        "id": "1186246479052931073",
+        "type": 0,
+        "allow": "0",
+        "deny": "2048"
+      }
+    ]
+  },
+  {
+    "id": "1193826425241731084",
+    "type": 0,
+    "guild_id": "1186246479052931073",
+    "position": 2,
+    "flags": 0,
+    "parent_id": "1186246730711171080",
+    "name": "desarrollo",
+    "topic": "PRs, revisiones y dudas técnicas",
+    "nsfw": false,
+    "rate_limit_per_user": 0,
+    "last_message_id": "1558402630827507732",
+    "permission_overwrites": []
+  },
+  {
+    "id": "1206510000537731085",
+    "type": 0,
+    "guild_id": "1186246479052931073",
+    "position": 3,
+    "flags": 0,
+    "parent_id": "1186246730711171080",
+    "name": "despliegues",
+    "topic": "Avisos de despliegue y alertas de staging/producción",
+    "nsfw": false,
+    "rate_limit_per_user": 0,
+    "last_message_id": "1558400497751293969",
+    "permission_overwrites": []
+  },
+  {
+    "id": "1214120145715331086",
+    "type": 0,
+    "guild_id": "1186246479052931073",
+    "position": 4,
+    "flags": 0,
+    "parent_id": "1186246730711171080",
+    "name": "dirección",
+    "topic": null,
+    "nsfw": false,
+    "rate_limit_per_user": 0,
+    "last_message_id": "1557444899635331095",
+    "permission_overwrites": [
+      {
+        "id": "1186246479052931073",
+        "type": 0,
+        "allow": "0",
+        "deny": "1024"
+      },
+      {
+        "id": "1186247485685891079",
+        "type": 0,
+        "allow": "1024",
+        "deny": "0"
+      },
+      {
+        "id": "1558182258278531074",
+        "type": 1,
+        "allow": "66560",
+        "deny": "0"
+      }
+    ]
+  },
+  {
+    "id": "1242024011366531088",
+    "type": 15,
+    "guild_id": "1186246479052931073",
+    "position": 5,
+    "flags": 0,
+    "parent_id": "1186246730711171080",
+    "name": "ideas",
+    "topic": "Propuestas de mejora",
+    "nsfw": false,
+    "rate_limit_per_user": 0,
+    "last_message_id": "1556969265561731096",
+    "permission_overwrites": [],
+    "available_tags": [],
+    "default_sort_order": null,
+    "default_forum_layout": 0,
+    "default_reaction_emoji": null,
+    "default_thread_rate_limit_per_user": 0
+  },
+  {
+    "id": "1186246856540291081",
+    "type": 4,
+    "guild_id": "1186246479052931073",
+    "position": 1,
+    "flags": 0,
+    "parent_id": null,
+    "name": "Voz",
+    "permission_overwrites": []
+  },
+  {
+    "id": "1186247234027651087",
+    "type": 2,
+    "guild_id": "1186246479052931073",
+    "position": 0,
+    "flags": 0,
+    "parent_id": "1186246856540291081",
+    "name": "Reunión diaria",
+    "nsfw": false,
+    "rate_limit_per_user": 0,
+    "last_message_id": null,
+    "bitrate": 64000,
+    "user_limit": 0,
+    "rtc_region": null,
+    "permission_overwrites": []
+  }
+]

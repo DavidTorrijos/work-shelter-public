@@ -1,0 +1,82 @@
+{
+  "op": 0,
+  "s": 42,
+  "t": "MESSAGE_CREATE",
+  "d": {
+    "id": "1558400497751293969",
+    "channel_id": "1206510000537731085",
+    "guild_id": "1186246479052931073",
+    "author": {
+      "id": "455657442508931076",
+      "username": "brunoesteve",
+      "avatar": "0f1e2d3c4b5a69788796a5b4c3d2e1f0",
+      "discriminator": "0",
+      "public_flags": 0,
+      "flags": 0,
+      "global_name": "Bruno Esteve",
+      "banner": null,
+      "accent_color": null,
+      "avatar_decoration_data": null
+    },
+    "member": {
+      "roles": [
+        "1186247737344131078"
+      ],
+      "nick": null,
+      "avatar": null,
+      "banner": null,
+      "premium_since": null,
+      "joined_at": "2023-12-18T11:20:03.511000+00:00",
+      "pending": false,
+      "flags": 0,
+      "deaf": false,
+      "mute": false,
+      "communication_disabled_until": null
+    },
+    "content": "<@286829995622531075> <@&1186247737344131078> staging vuelve a dar 502 tras el despliegue de las 10:30. ¿Lo miramos antes de la demo?",
+    "timestamp": "2026-10-10T08:47:12.345000+00:00",
+    "edited_timestamp": null,
+    "tts": false,
+    "mention_everyone": false,
+    "mentions": [
+      {
+        "id": "286829995622531075",
+        "username": "irene.valdes",
+        "avatar": "a1b2c3d4e5f60718293a4b5c6d7e8f90",
+        "discriminator": "0",
+        "public_flags": 0,
+        "flags": 0,
+        "global_name": "Irene Valdés",
+        "banner": null,
+        "accent_color": null,
+        "avatar_decoration_data": null,
+        "member": {
+          "roles": [
+            "1186247737344131078",
+            "1186247485685891079"
+          ],
+          "nick": null,
+          "avatar": null,
+          "banner": null,
+          "premium_since": null,
+          "joined_at": "2023-12-18T10:00:41.102000+00:00",
+          "pending": false,
+          "flags": 0,
+          "deaf": false,
+          "mute": false,
+          "communication_disabled_until": null
+        }
+      }
+    ],
+    "mention_roles": [
+      "1186247737344131078"
+    ],
+    "attachments": [],
+    "embeds": [],
+    "components": [],
+    "pinned": false,
+    "type": 0,
+    "flags": 0,
+    "nonce": "1558400496723689490"
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "_nota": "Sintético (sin credenciales). Respuesta a la consulta Notificaciones de server/integraciones/linear.ts; campos comprobados contra el esquema público (interface Notification: title, subtitle, url, type, category, readAt, archivedAt, snoozedUntilAt, actor, botActor; IssueNotification: issue, comment). Casos: asignación, mención en comentario, comentario nuevo, cambio de estado por un bot, una ya archivada (no debe notificar) y una pospuesta (snoozedUntilAt en el futuro, no debe notificar).",
+  "data": {
+    "notifications": {
+      "nodes": [
+        {
+          "id": "n-0001-asignada",
+          "type": "issueAssignedToYou",
+          "category": "assignments",
+          "title": "Staging devuelve 502 tras desplegar",
+          "subtitle": "Tomás Ibarra te ha asignado la incidencia",
+          "url": "https://linear.app/taller-ejemplo/issue/PLAT-147/staging-devuelve-502-tras-desplegar",
+          "createdAt": "2026-10-10T08:58:11.204Z",
+          "readAt": null,
+          "archivedAt": null,
+          "snoozedUntilAt": null,
+          "actor": { "id": "u-tomas", "name": "Tomás Ibarra", "displayName": "tomas" },
+          "botActor": null,
+          "issue": { "id": "00000000-0000-4000-8000-000000000905", "identifier": "PLAT-147", "title": "Staging devuelve 502 tras desplegar", "url": "https://linear.app/taller-ejemplo/issue/PLAT-147/staging-devuelve-502-tras-desplegar", "priority": 1, "team": { "key": "PLAT" } },
+          "comment": null
+        },
+        {
+          "id": "n-0002-mencion",
+          "type": "issueCommentMention",
+          "category": "mentions",
+          "title": "Migrar la cola de notificaciones a SQS",
+          "subtitle": "Nerea Calvo te ha mencionado",
+          "url": "https://linear.app/taller-ejemplo/issue/PLAT-142/migrar-la-cola-de-notificaciones-a-sqs#comment-5a1b2c3d",
+          "createdAt": "2026-10-10T08:31:40.000Z",
+          "readAt": null,
+          "archivedAt": null,
+          "snoozedUntilAt": null,
+          "actor": { "id": "u-nerea", "name": "Nerea Calvo", "displayName": "nerea" },
+          "botActor": null,
+          "issue": { "id": "00000000-0000-4000-8000-000000000907", "identifier": "PLAT-142", "title": "Migrar la cola de notificaciones a SQS", "url": "https://linear.app/taller-ejemplo/issue/PLAT-142/migrar-la-cola-de-notificaciones-a-sqs", "priority": 2, "team": { "key": "PLAT" } },
+          "comment": { "id": "5a1b2c3d", "body": "@irene ¿revisas el **plan de rollback** antes del jueves? Te dejo el [documento](https://example.invalid/doc)." }
+        },
+        {
+          "id": "n-0003-comentario",
+          "type": "issueNewComment",
+          "category": "commentsAndReplies",
+          "title": "Tokens de color en modo oscuro",
+          "subtitle": "Bruno Esteve ha comentado",
+          "url": "https://linear.app/taller-ejemplo/issue/WEB-31/tokens-de-color-en-modo-oscuro#comment-6b2c3d4e",
+          "createdAt": "2026-10-09T17:02:05.000Z",
+          "readAt": "2026-10-09T18:00:00.000Z",
+          "archivedAt": null,
+          "snoozedUntilAt": null,
+          "actor": { "id": "u-bruno", "name": "Bruno Esteve", "displayName": "bruno" },
+          "botActor": null,
+          "issue": { "id": "e4f5a6b7-0000-4000-8000-000000000031", "identifier": "WEB-31", "title": "Tokens de color en modo oscuro", "url": "https://linear.app/taller-ejemplo/issue/WEB-31/tokens-de-color-en-modo-oscuro", "priority": 3, "team": { "key": "WEB" } },
+          "comment": { "id": "6b2c3d4e", "body": "El contraste del botón secundario no llega a 4.5:1." }
+        },
+        {
+          "id": "n-0004-estado",
+          "type": "issueStatusChanged",
+          "category": "statusChanges",
+          "title": "Exportar a 4K sin cortes de audio",
+          "subtitle": "GitHub ha movido la incidencia a In Review",
+          "url": "https://linear.app/taller-ejemplo/issue/WEB-40/exportar-a-4k-sin-cortes-de-audio",
+          "createdAt": "2026-10-09T12:15:00.000Z",
+          "readAt": null,
+          "archivedAt": null,
+          "snoozedUntilAt": null,
+          "actor": null,
+          "botActor": { "id": "b-github", "name": "GitHub" },
+          "issue": { "id": "f5a6b7c8-0000-4000-8000-000000000040", "identifier": "WEB-40", "title": "Exportar a 4K sin cortes de audio", "url": "https://linear.app/taller-ejemplo/issue/WEB-40/exportar-a-4k-sin-cortes-de-audio", "priority": 4, "team": { "key": "WEB" } },
+          "comment": null
+        },
+        {
+          "id": "n-0005-archivada",
+          "type": "issueNewComment",
+          "category": "commentsAndReplies",
+          "title": "Retro del ciclo 33",
+          "subtitle": "Tomás Ibarra ha comentado",
+          "url": "https://linear.app/taller-ejemplo/issue/PLAT-120/retro-del-ciclo-33",
+          "createdAt": "2026-10-08T09:00:00.000Z",
+          "readAt": "2026-10-08T10:00:00.000Z",
+          "archivedAt": "2026-10-08T10:00:01.000Z",
+          "snoozedUntilAt": null,
+          "actor": { "id": "u-tomas", "name": "Tomás Ibarra", "displayName": "tomas" },
+          "botActor": null,
+          "issue": { "id": "a6b7c8d9-0000-4000-8000-000000000120", "identifier": "PLAT-120", "title": "Retro del ciclo 33", "url": "https://linear.app/taller-ejemplo/issue/PLAT-120/retro-del-ciclo-33", "priority": 0, "team": { "key": "PLAT" } },
+          "comment": { "id": "7c3d4e5f", "body": "Cerrado." }
+        },
+        {
+          "id": "n-0006-pospuesta",
+          "type": "issueDue",
+          "category": "reminders",
+          "title": "Renovar certificados del CDN",
+          "subtitle": "Vence mañana",
+          "url": "https://linear.app/taller-ejemplo/issue/PLAT-150/renovar-certificados-del-cdn",
+          "createdAt": "2026-10-10T06:00:00.000Z",
+          "readAt": null,
+          "archivedAt": null,
+          "snoozedUntilAt": "2099-01-01T00:00:00.000Z",
+          "actor": null,
+          "botActor": null,
+          "issue": { "id": "b7c8d9e0-0000-4000-8000-000000000150", "identifier": "PLAT-150", "title": "Renovar certificados del CDN", "url": "https://linear.app/taller-ejemplo/issue/PLAT-150/renovar-certificados-del-cdn", "priority": 2, "team": { "key": "PLAT" } },
+          "comment": null
+        }
+      ],
+      "pageInfo": { "hasNextPage": false, "endCursor": "n-0006-pospuesta" }
+    }
+  }
+}

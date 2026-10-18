@@ -1,0 +1,16 @@
+{
+  "_nota": "Sintético, con la forma de conversations.history y users.conversations de la Web API de Slack. IDs inventados.",
+  "canales": [
+    { "id": "C0000GENERAL", "name": "general", "is_channel": true, "is_private": false },
+    { "id": "G0000PRIVADO", "name": "equipo-web", "is_channel": true, "is_private": true },
+    { "id": "D0000DIRECTO", "is_im": true, "user": "U0000BRUNO" },
+    { "id": "C0000MPDM", "name": "mpdm-irene--bruno--yo-1", "is_mpim": true }
+  ],
+  "mensajes": [
+    { "type": "message", "user": "U0000IRENE", "ts": "1791622800.000100", "text": "<@U0000YO> ¿revisas <https://example.com/pr/42|el PR> antes de las 12? &amp; avisa en <#C0000GENERAL|general>" },
+    { "type": "message", "user": "U0000BRUNO", "ts": "1791622700.000200", "text": "<!here> despliegue a las 17:00" },
+    { "type": "message", "user": "U0000YO", "ts": "1791622600.000300", "text": "mío: no debe salir" },
+    { "type": "message", "subtype": "channel_join", "user": "U0000TOMAS", "ts": "1791622500.000400", "text": "<@U0000TOMAS> se ha unido al canal" },
+    { "type": "message", "user": "U0000TOMAS", "ts": "1791622400.000500", "text": "", "files": [{ "name": "plano.pdf" }] }
+  ]
+}
